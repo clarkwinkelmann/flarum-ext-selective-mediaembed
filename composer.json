@@ -1,0 +1,47 @@
+{
+    "name": "clarkwinkelmann/flarum-ext-selective-mediaembed",
+    "description": "Enable a subset of MediaEmbed sites from TextFormatter",
+    "keywords": [
+        "flarum",
+        "formatting",
+        "embed"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/clarkwinkelmann/flarum-ext-selective-mediaembed/issues",
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-selective-mediaembed",
+        "forum": "https://discuss.flarum.org/d/31404"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClarkWinkelmann\\SelectiveMediaEmbed\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Selective MediaEmbed",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-paragraph",
+                "backgroundColor": "#684ba6",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/31404"
+        }
+    }
+}
