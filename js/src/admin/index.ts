@@ -43,7 +43,6 @@ app.initializers.add('clarkwinkelmann-selective-mediaembed', () => {
                     Switch.component({
                         state: siteIds.indexOf(site.id) !== -1,
                         onchange: (enabled: boolean) => {
-                            console.log(enabled);
                             const i = siteIds.indexOf(site.id);
 
                             // Shouldn't happen, but in case the new state is same as current state, ignore

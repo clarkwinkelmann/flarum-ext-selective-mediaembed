@@ -23,6 +23,10 @@ class ConfigureFormatter
         }
 
         foreach ($siteIds as $siteId) {
+            if (!$configurator->MediaEmbed->defaultSites->exists($siteId)) {
+                continue;
+            }
+
             $configurator->MediaEmbed->add($siteId);
         }
     }
